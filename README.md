@@ -1,4 +1,4 @@
-News Dashboard – Setup & Run Guide
+### News Dashboard – Setup & Run Guide
 
 This repository contains a full-stack News Dashboard application built with:
 
@@ -28,7 +28,7 @@ Angular CLI
 
 ------------------------------------------------------------------------
 
-Backend Setup (Django)
+## Backend Setup (Django)
 1. Clone the Repository
 git clone <repository-url>
 cd news_dashboard
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ------------------------------------------------------------------------
 
-Database Setup (PostgreSQL)
+## Database Setup (PostgreSQL)
 1. Create Database and User
 CREATE DATABASE news_dashboard;
 CREATE USER news_user WITH PASSWORD 'your_password';
@@ -61,7 +61,7 @@ Monthly partitions (news_article_YYYY_MM)
 
 ------------------------------------------------------------------------
 
-Environment Variables
+## Environment Variables
 
 Create a .env file in the backend root directory:
 
@@ -86,7 +86,7 @@ http://127.0.0.1:8000
 
 ------------------------------------------------------------------------
 
-Redis Setup
+## Redis Setup
 
 Start Redis:
 
@@ -101,7 +101,7 @@ Celery message broker
 
 ------------------------------------------------------------------------
 
-Celery Setup
+## Celery Setup
 Start Celery Worker
 celery -A backend worker -l info
 
@@ -112,7 +112,7 @@ celery -A backend beat -l info
 Celery periodically fetches news from the external API and stores it in PostgreSQL.
 
 ------------------------------------------------------------------------
-Frontend Setup (Angular)
+## Frontend Setup (Angular)
 1. Install Dependencies
 cd frontend
 npm install
@@ -127,7 +127,7 @@ http://localhost:4200
 
 ------------------------------------------------------------------------
 
-Running Order (Recommended)
+## Running Order (Recommended)
 
 Redis
 
@@ -138,10 +138,11 @@ Celery worker
 Celery beat
 
 Angular frontend
---------------------
+
+
 ----------------------------------------------------
 
-Notes
+## Notes
 
 The Source table uses a CharField primary key to match external API identifiers.
 

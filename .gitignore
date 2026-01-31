@@ -1,0 +1,75 @@
+# ---------------------------
+# Django (back folder)
+# ---------------------------
+backend/__pycache__/
+backend/**/*.pyc
+backend/backend/__pycache__/
+backend/news/__pycache__/
+backend/.env               
+backend/celerybeat-schedule
+backend/news/migrations/__pycache__/
+backend/news/migrations/*.pyc
+backend/news/migrations/*.py~
+backend/.vscode/
+# ---------------------------
+# Angular (front folder)
+# ---------------------------
+# Angular project inside frontend/latest-news-dashboard/
+frontend/latest-news-dashboard/dist
+frontend/latest-news-dashboard/tmp
+frontend/latest-news-dashboard/out-tsc
+frontend/latest-news-dashboard/bazel-out
+
+frontend/latest-news-dashboard/node_modules
+frontend/latest-news-dashboard/npm-debug.log
+frontend/latest-news-dashboard/yarn-error.log
+
+frontend/latest-news-dashboard/.idea/
+frontend/latest-news-dashboard/.project
+frontend/latest-news-dashboard/.classpath
+frontend/latest-news-dashboard/.c9/
+frontend/latest-news-dashboard/*.launch
+frontend/latest-news-dashboard/.settings/
+frontend/latest-news-dashboard/*.sublime-workspace
+
+frontend/latest-news-dashboard/.vscode/*
+!frontend/latest-news-dashboard/.vscode/settings.json
+!frontend/latest-news-dashboard/.vscode/tasks.json
+!frontend/latest-news-dashboard/.vscode/launch.json
+!frontend/latest-news-dashboard/.vscode/extensions.json
+!frontend/latest-news-dashboard/.vscode/mcp.json
+frontend/latest-news-dashboard/.history/*
+
+frontend/latest-news-dashboard/.angular/cache
+frontend/latest-news-dashboard/.sass-cache/
+/connect.lock
+frontend/latest-news-dashboard/coverage
+/libpeerconnection.log
+testem.log
+frontend/latest-news-dashboard/typings
+__screenshots__/
+
+
+
+# ---------------------------
+# Virtual Machine / environment
+# ---------------------------
+                 # VM or project environment folder
+prjvem/
+prjvem
+/prjvem/
+
+# ---------------------------
+# IDE / editor files
+# ---------------------------
+.vscode/
+*.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ---------------------------
+# OS generated files
+# ---------------------------
+.DS_Store
+Thumbs.db
+
